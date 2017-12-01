@@ -17,10 +17,10 @@ permissions and limitations under the License.
 
 var config = module.exports = {
  firehose : {
-  DeliveryStreamName: '<YOUR DELIVERY STREAM NAME>', /* required */
+  DeliveryStreamName: 'twitter-sentiment-analysis', /* required */
   S3DestinationConfiguration: {
-    BucketARN: 'arn:aws:s3:::<YOUR BUCKET NAME>', /* required if stream not exists */
-    RoleARN: 'arn:aws:iam::<YOUR ACCOUNT ID>:role/<YOUR FIREHOSE ROLE>', /* required if stream not exists */
+    BucketARN: 'arn:aws:s3:::tommcm-twitter', /* required if stream not exists */
+    RoleARN: 'arn:aws:iam::447119549480:role/firehose_delivery_role', /* required if stream not exists */
     BufferingHints: {
       IntervalInSeconds: 300,
       SizeInMBs: 5
@@ -29,18 +29,18 @@ var config = module.exports = {
     EncryptionConfiguration: {
       NoEncryptionConfig: 'NoEncryption'
     },
-    Prefix: '<YOUR S3 PREFIX>'  /* if stream not exists. example: twitter/raw-data/  */
+    Prefix: 'twitter/raw-data'  /* if stream not exists. example: twitter/raw-data/  */
   }
   },
   twitter: {
-      consumer_key: '<YOUR CONSUMER KEY>',
-      consumer_secret: '<YOUR CONSUMER SECRET>',
-      access_token: '<YOUR ACCESS TOKEN>',
-      access_token_secret: '<YOUR ACCESS TOKEN SECRET>'
+      consumer_key: 'qFLIdEfrt6WpH4FYtZ0jteUfV',
+      consumer_secret: 'k7KWMySZIX3yYQsaJSr79OzJy8YnhhORGec7EnU5VUu11odo41',
+      access_token: '930607849-IqaARTB0lwrx84wOvVlAwMwdqxN5IRSimOlvvncM',
+      access_token_secret: 'etk6BHm5h7zj08LrbZBqooDjfe9uoXIdUJ0n8VgLJ4eaR'
  },
  locations: ['-127.33,23.34,-55.52,49.56'], //US   (All the world:'-180,-90,180,90; New York City:-74,40,-73,41; San Francisco:-122.75,36.8,-121.75,37.8, US:-127.33,23.34,-55.52,49.56)
  waitBetweenDescribeCallsInSeconds: 2,
  recordsToWritePerBatch: 100,
  waitBetweenPutRecordsCallsInMilliseconds: 50,
- region: '<YOUR FIREHOSE REGION>'   
+ region: 'us-west-2'   
 };
