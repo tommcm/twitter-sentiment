@@ -62,7 +62,7 @@ function twitterStreamProducer(firehose) {
       _waitForStreamToBecomeActive(callback);
     });
 
-    
+
   }
 
   // Checks current status of the stream.
@@ -89,26 +89,30 @@ function twitterStreamProducer(firehose) {
   function _sendToFirehose() {
     // var locations = [ '-180,-90,180,90' ]; //all the world
     var stream = T.stream('statuses/filter', { locations: config.locations });
+    // var stream = T.stream('statuses/filter', { track: ['RLWC2017'] });
 
     var records = [];
     var record = {};
     var recordParams = {};
     stream.on('tweet', function (tweet) {
        if (tweet.coordinates){
-            if (tweet.coordinates !== null){ 
+            if (tweet.coordinates !== null){
               console.log(JSON.stringify(tweet));
               recordParams = {
                   DeliveryStreamName: config.firehose.DeliveryStreamName,
                   Record: {
-                    Data: JSON.stringify(tweet)+',\n'
+                    Data: JSON.stringify(tweet)+'\n'
+                    // Data: JSON.stringify(tweet)+',\n'
+                    // Data: 'This is a test'+',\n'
                   }
               };
+              console.log(recordParams);
               firehose.putRecord(recordParams, function(err, data) {
                 if (err) {
                   log.error(err);
                 }
               });
-             
+
           }
         }
     });

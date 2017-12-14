@@ -38,9 +38,9 @@ var config = module.exports = {
       access_token: '930607849-IqaARTB0lwrx84wOvVlAwMwdqxN5IRSimOlvvncM',
       access_token_secret: 'etk6BHm5h7zj08LrbZBqooDjfe9uoXIdUJ0n8VgLJ4eaR'
  },
- locations: ['-127.33,23.34,-55.52,49.56'], //US   (All the world:'-180,-90,180,90; New York City:-74,40,-73,41; San Francisco:-122.75,36.8,-121.75,37.8, US:-127.33,23.34,-55.52,49.56)
+ locations: ['-127.33,23.34,-55.52,49.56'], //US   AUST: 113.65,153.61,-43.00,-12.46 (All the world:'-180,-90,180,90; New York City:-74,40,-73,41; San Francisco:-122.75,36.8,-121.75,37.8, US:-127.33,23.34,-55.52,49.56)
  waitBetweenDescribeCallsInSeconds: 2,
  recordsToWritePerBatch: 100,
  waitBetweenPutRecordsCallsInMilliseconds: 50,
- region: 'us-west-2'   
+ region: 'us-west-2'
 };

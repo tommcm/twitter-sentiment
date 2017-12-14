@@ -1,0 +1,110 @@
+2017-12-02 11:50:46.215 (PID: 67582) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 11:50:47.520 (PID: 67582) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 11:50:48.428 (PID: 67582) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 13:25:38.988 (PID: 74909) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 13:25:40.278 (PID: 74909) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 13:25:41.442 (PID: 74909) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 14:13:17.283 (PID: 78620) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 14:13:18.229 (PID: 78620) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 14:13:19.206 (PID: 78620) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 14:23:41.761 (PID: 79507) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 14:23:42.672 (PID: 79507) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 14:23:43.751 (PID: 79507) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 16:12:47.314 (PID: 86881) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 16:12:48.215 (PID: 86881) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 16:12:49.072 (PID: 86881) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 16:20:16.237 (PID: 87428) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 16:20:17.295 (PID: 87428) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 16:20:18.194 (PID: 87428) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 17:22:27.999 (PID: 87428) ERROR producer - { UnknownEndpoint: Inaccessible host: `firehose.us-west-2.amazonaws.com'. This service may not be available in the `us-west-2' region.
+    at Request.ENOTFOUND_ERROR (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/event_listeners.js:456:46)
+    at Request.callListeners (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/sequential_executor.js:105:20)
+    at Request.emit (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/sequential_executor.js:77:10)
+    at Request.emit (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/request.js:683:14)
+    at ClientRequest.error (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/event_listeners.js:295:22)
+    at ClientRequest.<anonymous> (/Users/tommcm/Documents/GitHub/twitter-sentiment/node_modules/aws-sdk/lib/http/node.js:89:19)
+    at emitOne (events.js:96:13)
+    at ClientRequest.emit (events.js:191:7)
+    at TLSSocket.socketErrorListener (_http_client.js:358:9)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:191:7)
+    at connectErrorNT (net.js:1040:8)
+    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:128:9)
+  message: 'Inaccessible host: `firehose.us-west-2.amazonaws.com\'. This service may not be available in the `us-west-2\' region.',
+  code: 'UnknownEndpoint',
+  region: 'us-west-2',
+  hostname: 'firehose.us-west-2.amazonaws.com',
+  retryable: true,
+  originalError: 
+   { Error: getaddrinfo ENOTFOUND firehose.us-west-2.amazonaws.com firehose.us-west-2.amazonaws.com:443
+       at errnoException (dns.js:28:10)
+       at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:73:26)
+     message: 'getaddrinfo ENOTFOUND firehose.us-west-2.amazonaws.com firehose.us-west-2.amazonaws.com:443',
+     code: 'NetworkingError',
+     errno: 'ENOTFOUND',
+     syscall: 'getaddrinfo',
+     hostname: 'firehose.us-west-2.amazonaws.com',
+     host: 'firehose.us-west-2.amazonaws.com',
+     port: 443,
+     region: 'us-west-2',
+     retryable: true,
+     time: 2017-12-02T06:22:27.999Z },
+  time: 2017-12-02T06:22:27.999Z }
+2017-12-02 18:16:04.268 (PID: 98581) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 18:16:05.258 (PID: 98581) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 18:16:06.232 (PID: 98581) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 18:18:08.602 (PID: 98734) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 18:18:09.727 (PID: 98734) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 18:18:10.760 (PID: 98734) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 18:19:36.796 (PID: 98840) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 18:19:37.760 (PID: 98840) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 18:19:38.818 (PID: 98840) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 18:26:33.973 (PID: 99341) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 18:26:34.910 (PID: 99341) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 18:26:35.812 (PID: 99341) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:22:07.047 (PID: 7000) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:22:07.985 (PID: 7000) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:22:09.319 (PID: 7000) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:22:51.194 (PID: 7072) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:22:54.118 (PID: 7072) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:22:55.114 (PID: 7072) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:24:08.629 (PID: 7181) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:24:09.741 (PID: 7181) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:24:10.649 (PID: 7181) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:37:44.787 (PID: 8353) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:37:45.940 (PID: 8353) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:37:47.011 (PID: 8353) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:39:13.489 (PID: 8470) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:39:14.461 (PID: 8470) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:39:15.491 (PID: 8470) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:42:32.409 (PID: 8732) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:42:33.327 (PID: 8732) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:42:34.357 (PID: 8732) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:54:09.312 (PID: 9812) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:54:10.400 (PID: 9812) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:54:11.251 (PID: 9812) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:55:27.781 (PID: 9912) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:55:28.850 (PID: 9912) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:55:30.029 (PID: 9912) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 20:58:30.302 (PID: 10145) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 20:58:31.226 (PID: 10145) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 20:58:32.227 (PID: 10145) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 21:00:56.484 (PID: 10456) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 21:00:57.429 (PID: 10456) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 21:00:58.283 (PID: 10456) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 21:01:02.403 (PID: 10463) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 21:01:03.667 (PID: 10463) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 21:01:04.612 (PID: 10463) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 21:02:08.650 (PID: 10540) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 21:02:09.671 (PID: 10540) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 21:02:10.659 (PID: 10540) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 21:04:23.513 (PID: 10787) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 21:04:25.582 (PID: 10787) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 21:04:26.521 (PID: 10787) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 22:00:13.526 (PID: 15099) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 22:00:14.757 (PID: 15099) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 22:00:15.647 (PID: 15099) INFO producer - Current status of the stream is ACTIVE.
+2017-12-02 22:05:03.656 (PID: 15537) INFO producer - Configured wait between consecutive PutRecords call in milliseconds: 50
+2017-12-02 22:05:04.639 (PID: 15537) INFO producer - twitter-sentiment-analysis stream is already created! Re-using it.
+2017-12-02 22:05:05.504 (PID: 15537) INFO producer - Current status of the stream is ACTIVE.
